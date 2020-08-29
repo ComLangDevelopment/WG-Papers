@@ -1,0 +1,110 @@
+[Technical Specification] Term Definitions for Laser Technical Specifications
+19 views
+chor...@gmail.com's profile photo
+chor...@gmail.com<chorman64@gmail.com>
+May 13, 2020, 4:20:30 PM
+to laser-lang-core-wg@googlegroups.com
+
+
+---
+Technical Specification of [term.program]
+1. The term Laser Program, or otherwise Program, is a collection of laser modules directly defined by a "package" of the laser language which is compiled as a single unit, and including any other packages which may be available
+2. A program which is intended to be consumed by other programs to build a "complete" program is called a library. 
+3. A program which is intended to be executed standalone, is called an application
+4. For the purposes of determining requirements and prohibitions, the Laser Language Standard Library is not "a program".
+5. The term "ill-formed" refers to a program which is erroneous. Except where explicitly indicated, if a program is ill-formed, a Laser Compiler shall issue a diagnostic and shall not translate the program.
+6. If a program is "ill-formed" but no diagnostic is required, it is unspecified if the program will translate correctly (including linking of the final program). The behavior of executing an application that is ill-formed, no diagnostic required, or accessing items defined by such a library, is undefined.
+7. The Laser Language Standard Library shall neither be ill-formed, nor ill-formed no diagnostic required. 
+---
+
+---
+Technical Specification of [term.shall]
+1. The use of the term "shall" indicates an absolute requirement of the specification.
+2. The use of the term "shall not" indicates an absolute prohibition of the specification
+3. Where a requirement or prohibition is applied to syntax or semantic structure of a language, it is a requirement of Laser Programs. Where such a requirement is violated, the program is ill-formed. 
+4. Otherwise, the requirement or prohibition is applied to the implementation itself. A conforming implementation satisfies all requirements and prohibitions of this specification.
+---
+
+---
+Technical Specification of [term.unspecified]
+1. The term "Unspecified", when applied to behavior, means that a choice of behavior is available to implementations. The choice of behavior may be constrained by surrounding context. The choice of behavior is not required to be documented, nor deterministic.
+2. The term "Unspecified", when applied to a value, means that a choice of valid value for a particular type is available. Additional constraints may apply to the values which may be selected, or otherwise any value (other than an invalid value) may be chosen.
+3. The term "Implementation-defined" shall have an identical meaning to "Unspecified", except that an implementation shall document how the choice is made and any considerations in that choice.
+4. The term "conditionally-supported", when applied to behavior, means it is implementation-defined whether the behavior is supported. If the behavior is unsupported, it is undefined.
+---
+
+---
+Technical specification of [term.undefined]
+1. The term "Undefined behavior" means behavior for which this specification imposes no limitations on the results for Laser Programs. 
+2. The phrases "the behavior is undefined" or "the behavior of ... is undefined", or a lack of any definitive behavior has the same meaning as the above, without distiction.
+---
+
+---
+Technical specification of [term.limit]
+1. A "limit of the implementation" is some upper bound imposed on a program by the implementation. If such a limit is violated, the behavior is undefined.
+2. This specification may provide a minimal limit for any such limitation, which implementations shall support. Implementations may choose higher limitations where it does not conflict with other requirements. 
+---
+
+---
+Technical Specification of [term.value]
+1. A bit is the smallest unit of computer memory, for which exactly two values (0 or 1) can possibly be assigned. A byte shall be a collection of 8 bits, and the smallest unit of memory addressable by the laser language. 
+2. A value is made up of a number of bytes, where those bytes are being represented as a particular type.
+3. A valid value is a value which has structural meaning within the language (but may not necessarily have valid semantic meaning for the types behaviour).
+4. An invalid value is a value which is not valid.
+5. An uninitialized value is any value which is constructed from bytes which have not be given a definite value. Uninitialized values are only valid for union types.
+---
+
+Alternatives Considered
+------------------------
+Alternatives were not deemed necessary for the technical specification of terms which would be used by the specification.
+rdrpen...@gmail.com's profile photo
+rdrpen...@gmail.com<rdrpenguin04@gmail.com>
+May 13, 2020, 5:31:52 PM
+to chor...@gmail.com, laser-lang-core-wg@googlegroups.com
+"a collection of laser modules" - So a program can't be a single module?
+Also, do you have anything in mind where the Standard Library can't be considered a program?
+"Uninitialized values are only valid for union types." - Weren't we going to have a flag that allowed a value to remain potentially uninitialized?
+
+--
+You received this message because you are subscribed to the Google Groups "Laser Lang Core WG" group.
+To unsubscribe from this group and stop receiving emails from it, send an email to laser-lang-core...@googlegroups.com.
+To view this discussion on the web visit https://groups.google.com/d/msgid/laser-lang-core-wg/CADLV35gi-xcKCO6LTgjugFq6PLZWs5mL2KsLXqtFaezxzyeTLA%40mail.gmail.com.
+chor...@gmail.com's profile photo
+chor...@gmail.com<chorman64@gmail.com>
+May 13, 2020, 5:39:08 PM
+to rdrpen...@gmail.com, laser-lang-core-wg@googlegroups.com
+
+
+On Wed, May 13, 2020 at 17:38 connor horman <chor...@gmail.com> wrote:
+
+
+On Wed, May 13, 2020 at 17:31 Ray Redondo <rdrpen...@gmail.com> wrote:
+"a collection of laser modules" - So a program can't be a single module?
+A collection may be empty, or have a single element. A single module that forms a program is a program.
+
+Also, do you have anything in mind where the Standard Library can't be considered a program?
+Its basically a way of saying "Standard Library is special and can do special things programs aren't allowed to do". 
+"Uninitialized values are only valid for union types." - Weren't we going to have a flag that allowed a value to remain potentially uninitialized?
+That seems like a nightmare of llvm workarounds to me. uninitialized data is known to not be fixed by llvm. I'd prefer a library type, which would naturally be a (raw) union. You want to write a TR for that flag, be my guest, you are the compiler chair, and your group would naturally be the one that interacts the most with llvm. 
+chor...@gmail.com's profile photo
+chor...@gmail.com<chorman64@gmail.com>
+May 17, 2020, 11:28:22 AM
+to laser-lang-core-wg@googlegroups.com
+---
+Technical Specification of [term.correct]
+1. A Correct program is one which is not ill-formed, ill-formed no diagnostic required, or that does not evaluate any statement which has undefined behaviour
+2. A correct program can be said to have observable behaviour. With respect to evaluation of a correct program, all observable behaviour shall be preserved in-form by an implementation, and shall not be reordered relative to other observable behaviour on the same thread of execution.
+3. Notwithstanding the above, and implementation may transform a program without limitation.
+---
+chor...@gmail.com's profile photo
+chor...@gmail.com<chorman64@gmail.com>
+May 22, 2020, 1:10:16 PM
+to laser-lang-core-wg@googlegroups.com
+On Sun, 17 May 2020 at 11:28, connor horman <chor...@gmail.com> wrote:
+---
+Technical Specification of [term.correct]
+1. A Correct program is one which is not ill-formed, ill-formed no diagnostic required, or that does not evaluate any statement which has undefined behaviour
+2. A correct program can be said to have observable behaviour. With respect to evaluation of a correct program, all observable behaviour shall be preserved in-form by an implementation, and shall not be reordered relative to other observable behaviour on the same thread of execution.
+3. Notwithstanding the above, an implementation may transform a program without limitation.
+---
+Fixed typo above 

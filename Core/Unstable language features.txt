@@ -1,0 +1,29 @@
+Re: Unstable language features
+18 views
+konsumlamm's profile photo
+konsumlamm<konsumlamm@gmail.com>
+Jun 17, 2020, 5:42:46 PM
+to chor...@gmail.com, laser-lang@googlegroups.com, laser-lang-core-wg@googlegroups.com
+Sounds good to me.
+chor...@gmail.com's profile photo
+chor...@gmail.com<chorman64@gmail.com>
+Jun 20, 2020, 11:36:57 AM
+to laser-lang-core-wg@googlegroups.com, laser-lang@googlegroups.com
+The full conversation was not forwarded for some reason, 
+
+Full Technical Specification below
+
+---
+Technical Specification for [lang.unstable]
+1. An unstable feature is one which is present in an implementation but not part of this specification, either because it is internal or it is subject to change, or both.
+2. An implementation may include 1 or more unstable features, both in the language and the standard library provided. A program that does not enable a feature shall not access constructs provided by that feature and not by this specification
+3. There shall be an attrbute, allow, which shall be used only on root declarations. which shall take a single identifier as a parameter. The identifier shall be the name of an unstable feature supported by the implementation or a declared by a linked library, or the identifier stability_attribute. A program which contains a root declaration with such an attribute for a given feature is said to use the feature. Implementations may impose additional, implementation-defined, limitations on programs which use unstable features.
+4. There shall be an attribute, unstable, which shall take an identifier which is the unstable feature. A program that does not use the stability_attribute feature shall not contain a declaration with this attrbute. A program, except for the program which contains the declaration, shall not name an item for which the declaration constaints this attribute, unless such a program contains a root declaration with the allow attribute for the same unstable feature.
+5. All published technical specifications which have not been approved by the Core Working Group which introduce language or library features shall suggest an unstable feature name which such features may be made available with in supporting implementations. Such features may not be made available by an implementation, except with the use of an unstable feature. 
+6. A feature of the language or library which is introduced in this specification shall not require the use of an unstable feature, unless it is explicitly stated to.
+7. For the purposes of determining used unstable features, a macro which expands inside a program which does not contain its declaration shall consider only the unstable features used by the declaring program. 
+8. Implementations shall not support unstable features which are named by this specification, except where such unstable features are implemented as defined in this specification
+---
+
+On Wed, 17 Jun 2020 at 17:42, Niklas <konsu...@gmail.com> wrote:
+Sounds good to me.
