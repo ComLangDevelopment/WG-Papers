@@ -93,7 +93,7 @@ The Chair of the Embedded Working Group, or a majority of its membership, may re
 The Embedded Working Group may also hold joint meetings when recommended by another working group, on consent by either the Working Group Chair or a Majority of the membership of the Working Group.
  Such a joint meeting shall adopt the rules of order provided above, and quorum for that meeting shall be 2/3s of the membership of the Embedded Working Group +2, or 20 total participants, and shall include 2 representatives from the recommending Working Group, one of whom shall be the chair of that working group, or a designee of the chair. 
 
-The procedure for holding a joint meeting shall be determined by both the Embedded Working Group Chair, and the chair of the working group. 
+The procedure for holding a joint meeting shall be determined by both the Embedded Working Group Chair, and the chair of the other working group. 
 
 No joint meeting held with another Working Group may resolve a vote of non-confidence as provided above. No joint meeting held with another Working Group may be counted for rescheduling a meeting to resolve a vote of non-confidence. 
 
