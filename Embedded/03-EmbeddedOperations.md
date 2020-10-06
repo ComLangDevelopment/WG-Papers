@@ -17,7 +17,7 @@ sofware development.
 
 ## Operations of the Embedded Working Group
 
-## Embedded Working Group Chair
+### Embedded Working Group Chair
 
 The Embedded Working Group shall have a chair position,
  appointed as the Core Working Group sees fit and defines through Governance. 
@@ -49,7 +49,7 @@ There shall be a channel for small or infrequent discussions related to the work
 
 The Discord Channel shall contain information about the Mailing List and should be used to hold general discussions which do not hold considerable meaning to any paper for the
  Embedded Working Group to discuss. Non-members of the Working Group may also use this channel to submit papers to the working group, 
- as required by Governance. Discussions about such papers with there presenter, may take place in this channel. 
+ as required by Governance. Discussions about such papers with the presenter may take place in this channel. 
 
 ### Meetings
 
@@ -69,7 +69,7 @@ An initial agenda for the meeting shall be posted by the Working Group Chair 48 
 A *simple-majority* shall be defined as a number of members of the working group which exceeds half of the number of members in attendence of the meeting. 
 A *two-thirds majority* shall be defined as the number of members which is equal to or exceeds two-thirds of the number of members in attendence. 
 
-The quorum for any meeting shall be lesser of two-thirds of the membership of the working group and 20 members, or any other number proportional to the membership which the Core Working Group may see fit to impose. 
+The quorum for any meeting shall be the lesser of two-thirds of the membership of the working group and 20 members, or any other number proportional to the membership which the Core Working Group may see fit to impose. 
 If the number of members present in a meeting is less than the quorum, the meeting shall not progress, and may be rescheduled at the descresion of the Working Group Chair. 
 If, by members attending the meeting leaving it for any reason, a quorum is lost, the Working Group shall conduct no further business other than adjourning the meeting. 
 
@@ -108,7 +108,7 @@ The following rules shall apply to all dealings of the Embedded Working Group in
 2. Insofar as to not conflict with the 1, the working group chair shall have responsibility for removing any person from the working group who, in the opinion of the working group chair, or a majority of the membership of the working group, violates the provisions of any code of conduct which the Core Working Group, or some working group established for this purpose, sees fit to publish as in-force. 
 3. Notwithstanding the above, the working group chair may remove any person from the working group who, in the opinion of either the working group chair, or a majority of the membership of the working group, is otherwise disruptive in presense, and seeks to prevent the membership from furthering the goal defined above. 
 
-### Amendments to this Policy
+## Amendments to this Policy
 
 The Embedded Working Group hereby adopts this policy, as the effective rules and operation of the Working Group. This policy shall not be amended, replaced, or disposed of without consent of two thirds of the membership of the working group. 
 This policy, its replacement, and its amendments shall be presented to core as a Technical Report for approval. The Chair shall voice their approval of all such Technical Reports which have been approved by two thirds of the membership of the working group.
