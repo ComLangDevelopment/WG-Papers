@@ -47,6 +47,7 @@ There shall be a channel for small or infrequent discussions related to the work
  or whatever general discussion platform the Core Working Group should deem appropriate. This channel shall be named wg-embedded, or some other name
  which the Core Working Group may assign it, which is reasonably likely to be considered this platform. 
 
+
 The Discord Channel shall contain information about the Mailing List and should be used to hold general discussions which do not hold considerable meaning to any paper for the
  Embedded Working Group to discuss. Non-members of the Working Group may also use this channel to submit papers to the working group, 
  as required by Governance. Discussions about such papers with the presenter may take place in this channel. 
@@ -56,8 +57,7 @@ The Discord Channel shall contain information about the Mailing List and should 
 The Chair of the Embedded Working Group, or a majority of its membership, may from time to time call for a Voice meeting which 
  are to be held in a designated Voice Channel of the Official Discord Server of the Laser language, or some other mechanism which the Working Group Chair may deem appropriate. 
 
-The scheduled date of a meeting shall be announced 1 week (7 days) before that scheduled date, or if the scheduled date is to be determined through some dynamic mechanism,
- this mechanism shall be made available 1 week before the first possible scheduled date, and the results shall be announced not later than 24 hours before the first
+The scheduled date of a meeting shall be announced 1 week (7 days) before that scheduled date, or if the scheduled date is to be determined through some dynamic mechanism, this mechanism shall be made available 1 week before the first possible scheduled date, and the results shall be announced not later than 24 hours before the first
  possible scheduled date. 
 
 
@@ -66,7 +66,7 @@ These meetings shall be conducted according to any rules of order which the Core
 
 An initial agenda for the meeting shall be posted by the Working Group Chair 48 hours before the scheduled date. A transcription of all conducted business on the agenda shall be made available not later than 48 hours after the conclusion of the meeting, and shall be made available to the members of the working group. 
 
-A *simple-majority* shall be defined as a number of members of the working group which exceeds half of the number of members in attendence of the meeting. 
+A *simple-majority* shall be defined as a number of members of the working group which exceeds half of the number of members in attendence of the meeting. If a *simple-majority* is tied, the Working Group Chair may offer an additional vote to settle the tie.
 A *two-thirds majority* shall be defined as the number of members which is equal to or exceeds two-thirds of the number of members in attendence. 
 
 The quorum for any meeting shall be the lesser of two-thirds of the membership of the working group and 20 members, or any other number proportional to the membership which the Core Working Group may see fit to impose. 
@@ -85,6 +85,8 @@ If the meeting does not have quorum, the meeting shall not progress as above, th
  If a Meeting to resolve a Vote of non-confidence is rescheduled more than two times, the Working Group chair may dismiss the request. 
 A majority of the working group may also ask for the request to be dismissed. 
 
+For the purposes of the above, the Working Group Chair shall be excluded from voting and from majority requirements, though may offer an additional vote to settle a tie.
+
 ### Joint Meetings
 
 The Chair of the Embedded Working Group, or a majority of its membership, may recommend to any other Working Group of the Laser Language, excluding the Core Working Group, that it hold a joint meeting with the Embedded Working Group. During such meetings, the Working Group to which the meeting is recommended may provide the rules of order for that meeting, otherwise the rules adopted by the Embedded Working Group shall apply. If the Working Group to which the meeting is recommended does not provide for a quorum, it shall be 2/3s of the membership of that working group + 2, or 20 total participants, whichever is lower. For a meeting to be considered a joint meeting,
@@ -96,17 +98,15 @@ The Embedded Working Group may also hold joint meetings when recommended by anot
 The procedure for holding a joint meeting shall be determined by both the Embedded Working Group Chair, and the chair of the other working group. 
 
 No joint meeting held with another Working Group may resolve a vote of non-confidence as provided above. No joint meeting held with another Working Group may be counted for rescheduling a meeting to resolve a vote of non-confidence. 
-
-When a meeting is announced that will be conducted as a joint meeting, 
+ 
 
 ### Rules and Code of Conduct
 
 
-
-The following rules shall apply to all dealings of the Embedded Working Group including, but not limited to, Meetings, discussions on the mailing list and in the discord channel
-1. The working group chair shall not neglect to admit, or remove any person from the working group but for belonging to a protected class, including but not limited to, race, gender, ethnicity, sexual orientation, or disibility status. 
-2. Insofar as to not conflict with the 1, the working group chair shall have responsibility for removing any person from the working group who, in the opinion of the working group chair, or a majority of the membership of the working group, violates the provisions of any code of conduct which the Core Working Group, or some working group established for this purpose, sees fit to publish as in-force. 
-3. Notwithstanding the above, the working group chair may remove any person from the working group who, in the opinion of either the working group chair, or a majority of the membership of the working group, is otherwise disruptive in presense, and seeks to prevent the membership from furthering the goal defined above. 
+The following rules shall apply to all dealings of the Embedded Working Group including, but not limited to: meetings, or discussions on the mailing list and in the discord channel
+1. The working group chair shall not determine whether or not to remove from or admit a person to the working group based on their belonging to a protected class, which shall include but is not limited to: race, gender, ethnicity, sexual orientation, age, or disability status. 
+2. The working group chair shall have the authority and responsibility for removing any person from the working group who, in the opinion of the working group chair, or a majority of the membership of the working group, violates the provisions of any code of conduct which the Core Working Group, or some working group established for this purpose, sees fit to publish as in-force, provided it does not conflict with 1. 
+3. The working group chair may remove any person from the working group who, in the opinion of either the working group chair, or a majority of the membership of the working group, is otherwise disruptive in presense, and seeks to prevent the membership from furthering the goal defined above, provided it does not conflict with any of the above 
 
 ## Amendments to this Policy
 
