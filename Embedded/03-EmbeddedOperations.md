@@ -110,7 +110,7 @@ The following rules shall apply to all dealings of the Embedded Working Group in
 
 ## Amendments to this Policy
 
-The Embedded Working Group hereby adopts this policy, as the effective rules and operation of the Working Group. This policy shall not be amended, replaced, or disposed of without consent of two thirds of the membership of the working group. 
+The Embedded Working Group hereby adopts this policy, as the effective rules and operation of the Working Group. This policy shall only be amended, replaced, or disposed of with consent of two thirds of the membership of the working group. 
 This policy, its replacement, and its amendments shall be presented to core as a Technical Report for approval. The Chair shall voice their approval of all such Technical Reports which have been approved by two thirds of the membership of the working group.
 
 
