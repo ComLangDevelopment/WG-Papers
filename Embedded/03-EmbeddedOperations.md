@@ -108,6 +108,16 @@ The following rules shall apply to all dealings of the Embedded Working Group in
 2. The working group chair shall have the authority and responsibility for removing any person from the working group who, in the opinion of the working group chair, or a majority of the membership of the working group, violates the provisions of any code of conduct which the Core Working Group, or some working group established for this purpose, sees fit to publish as in-force, provided it does not conflict with 1. 
 3. The working group chair may remove any person from the working group who, in the opinion of either the working group chair, or a majority of the membership of the working group, is otherwise disruptive in presense, and seeks to prevent the membership from furthering the goal defined above, provided it does not conflict with any of the above 
 
+## Project Manager
+The Project Manager shall be the person appointed to that position and the position of Chair of the Core Working Group, by any mechanism the Core Working Group sees fit. The Project Manager shall possess any authority granted to the Chair of the Working Group, unless the exercise of that authority is blocked by a two-thirds majority of the working group. This authority shall not be delegated or transferred by the Project Manager. Additionally, the Project Manager shall have the following authorities:
+* To order that the Working Group discard any paper deemed inappropriate or incorrect, unless the order is overturned by a two-thirds majority
+
+* To remove the Chair of the Working Group, effective only with a two-thirds majority vote by the Core Working Group
+* To establish a method under which a vacancy in the position of Chair of the Working Group may be filled. 
+* Request a list of the Members of the Working Group
+
+The Project Manager must have the confidence of the Core Working Group, and thus of the greater community. A majority of the members of this Working Group may compel the Chair of the Working Group to issue and/or concur on a vote of non-confidence.
+
 ## Amendments to this Policy
 
 The Embedded Working Group hereby adopts this policy, as the effective rules and operation of the Working Group. This policy shall only be amended, replaced, or disposed of with consent of two thirds of the membership of the working group. 
