@@ -1,0 +1,99 @@
+file = item*
+
+item = function  # TODO: other top-level definitions
+
+## functions
+# TODO: generics
+function = "fn" identifier "(" parameters ")" ("->" type)? block-expression
+parameters = (parameter ",")* parameter?
+parameter = pattern ":" type ("=" expression)?
+
+
+# TODO: add more patterns
+pattern = identifier
+
+# TODO: add generics
+type = identifier
+
+identifier = re"[a-zA-Z_$][a-zA-Z0-9_$]*"
+
+
+## expressions
+expression = expression-with-block | expression-without-block
+# TODO: match expression
+expression-with-block = block-expression
+                      | if-expression
+                      | while-expression
+                      | for-expression
+expression-without-block = literal-expression
+                         | operator-expression
+                         | tuple-expression
+                         | function-call-expression
+                         | expression "." identifier
+                         | "continue"
+                         | "break" expression?
+                         | "return" expression?
+                         | "(" expression ")"
+
+block-expression = "{" statements "}"
+statements = statement* expression-without-block?
+statement = ";" | item | let-statement | expression-without-block ";" | expression-with-block ";"?
+let-statement = "let" pattern (":" type)? ("=" expression)? ";"
+
+if-expression = "if" "(" expression ")" expression ("else" expression)?
+while-expression = "while" "(" expression ")" expression
+for-expression = "for" "(" pattern "in" expression ")" expression
+
+
+## literals
+# TODO (escape chars)
+literal-expression = integer-literal | float-literal | boolean-literal | char-literal | string-literal
+integer-literal = re"[0-9]+"
+float-literal = re"([0-9]+\.[0-9]+)|([0-9]+e[0-9]+)"
+boolean-literal = "true" | "false"
+char-literal = re"'.'"
+string-literal = re"\".*\""
+
+
+operator-expression = assignment-expression
+                    | arithmetic-logic-expression
+                    | comparison-expression
+assignment-expression = pattern "=" expression
+                      | pattern "+=" expression
+                      | pattern "-=" expression
+                      | pattern "*=" expression
+                      | pattern "/=" expression
+                      | pattern "%=" expression
+                      | pattern "&=" expression
+                      | pattern "|=" expression
+                      | pattern "^=" expression
+                      | pattern "<<=" expression
+                      | pattern ">>=" expression
+arithmetic-logic-expression = "+" expression
+                            | "-" expression
+                            | "!" expression
+                            | "~" expression
+                            | expression "+" expression
+                            | expression "-" expression
+                            | expression "*" expression
+                            | expression "/" expression
+                            | expression "%" expression
+                            | expression "&" expression
+                            | expression "|" expression
+                            | expression "^" expression
+                            | expression "<<" expression
+                            | expression ">>" expression
+                            | expression "&&" expression
+                            | expression "||" expression
+comparison-expression = expression "==" expression
+                      | expression "!=" expression
+                      | expression ">" expression
+                      | expression "<" expression
+                      | expression ">=" expression
+                      | expression "<=" expression
+
+tuple-expression = "(" elements ")"
+
+function-call-expression = expression "(" elements ")"
+
+elements = (expression ",")* expression?
