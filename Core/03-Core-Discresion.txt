@@ -1,0 +1,4 @@
+The following policy shall be included in the Rules of Order adopted by the Core Working Group. 
+
+1. The Core Working Group shall not approve any Technical Specification or Report without the consent of the Responsible Working Group Chair, or any chair of a working group that originated the paper if the Responsible Working Group Chair is not present.
+2. The Core Working Group shall not approve or consider approval of any Technical Specification or Report unless at least one Chair of a Working Group which originated the paper is present. 
