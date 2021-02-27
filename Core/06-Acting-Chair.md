@@ -1,0 +1,9 @@
+The following shall be included in the Rules of Order for the Core Working Group, and persuant to Governance Amendment 11, the procedure for filling vacancies in the position of the Project Manager:
+
+* The Project Manager shall appoint a member of the Core Working Group to serve as the Acting Chair of the Core Working Group, unless objected to by 1/3 (rounded up) of the Core Working Group and, if so objected, with the consent of a simple-majority of the Core Working Group.
+* The Acting Chair shall have the authority to convene the Core Working Group when the Project Manager is unable to do so or as the Project Manager may direct the Acting Chair to do so. 
+* When the position of the Project Manager may be vacant, the Acting Chair shall assume all duties of the Project Manager while the vacancy exists, and is directed to, in accordance with all policies for the elections of the position of Project Manager, or for Working Group chairs, seek to fill the vacancy in the position without unreasonable delay.
+* The Project Manager may direct the Acting Chair to, on a temporary basis, assume the responsibilities and authorities of the Project Manager for such time as may be necessary
+* During such vacancy, or when acting as directed, the Acting Chair shall possess only one vote, except while exercising the authority to break ties for a simple majority. 
+* The Position of Acting Chair is voluntary, and the Acting Chair may at any time resign such position. If, at such time, the position of Project Manager is vacant or, when the Acting Chair is directed to assume the duties as above, they shall appoint a replacement who shall act until the vacancy is resolved, or the Project Manager may resume their duties.
+* The acting chair may be removed from that position by a simple-majority vote of the Core Working Group.
